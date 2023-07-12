@@ -1,0 +1,206 @@
+body, html{
+    margin: 0;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#primaryNavBar{
+    background-color: black;
+    display:flex;
+    width: 95%;
+    padding: 6px 2% 16px 3% ;
+    height: fit-content;
+    flex-direction: row;
+    justify-content:end;
+}
+
+#primaryNavBar a{
+    width: 7%;
+    text-align: center;
+    font-size: 1em;
+    margin: 0.2em;
+    padding-top: 0.2em;
+    align-self: center;
+    transition: 1s;
+}
+
+#primaryNavBar a:hover{
+    color: red;
+}
+
+#primaryNavBar a:nth-child(1){
+    flex-grow: 1;
+}
+
+.page{
+    color: red;
+}
+
+.title{
+    width:400px;
+    align-content: start;
+    margin-right: 100%;
+}
+
+.body{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.896), rgba(255, 0, 0, 0.256));
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.support{
+    color: black;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.mem{
+    background-color: black;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+    padding:4%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.info{
+    width: 50%;
+    border-right: red solid 2px;
+    padding: 1%;
+}
+
+.info h3{
+    color:red;
+}
+
+.details{
+    width:70%;
+    margin-right: 10px;
+    border-right: solid;
+    border-color: rgba(255, 0, 0, 0.474);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 10% 10% 10%;
+    padding-right: 10%;
+}
+
+.form input{
+    align-self: flex-end;
+    height: 20px;
+    border: none;
+}
+
+.gender{
+    border-color: blue;
+    display: inline-flex;
+}
+
+.genLabel{
+    padding:8px 14px;
+    font-size: large;
+    background-color: rgba(128, 128, 128, 0.15);
+    cursor:pointer;
+    transition: 500ms;
+}
+
+
+.genLabel:focus{
+    background-color: black;
+    border: red solid;
+}
+
+
+.contribute{
+    text-align: center;
+}
+
+.contribute p{
+    display: flex;
+    flex-direction: column;
+}
+
+.contirbute p p{
+    display: flex;
+    flex-direction: row;
+}
+
+.conLabel{
+    border:black solid 0.5px;
+    margin:0 0%;
+    padding: 0% 0;
+}
+
+.conLabel:hover, .conLabel:focus{
+    border:red solid 0.5px;
+    border-radius: 5px;
+}
+
+.submit{
+    border:none;
+    background-color: red;
+    font-family: 'Quicksand';
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: larger;
+    transition: 300ms;
+}
+
+.submit:hover{
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.TEDxfooter{
+    background-color: black;
+    display: flex;
+    margin: 50px 100px;
+    justify-content: space-between;
+}
+
+.TEDxfooter div{
+    display: flex;
+    flex-direction: column;
+}
+
+.TEDxfooter div a{
+    height: 40px;
+    transition: color 0.5s;
+}
+
+.TEDxfooter div a:hover{
+    color: red;
+}
+
+.TEDxfooter div:nth-of-type(1) img{
+    width: 400px;
+    align-self: flex-start;
+    padding-top: 20%;
+}
+
+.TEDxfooter div h3{
+    color: red;
+    font-size: 25px;
+}
+
+
+.TED{
+    background-color: rgb(60, 60, 60);
+    padding: 10px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-evenly;
+}
