@@ -250,6 +250,6 @@ a{
     }
     .TED{
         flex-direction: column;
-        /* align-self: center; */
+        align-items: center; 
     }
 }
