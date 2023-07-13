@@ -14,7 +14,7 @@ a{
     background-color: black;
     display:flex;
     width: 95%;
-    padding: 6px 2% 16px 3% ;
+    padding: 1% 2% 2.5% 3% ;
     height: fit-content;
     flex-direction: row;
     justify-content:end;
@@ -105,11 +105,6 @@ a{
     border: none;
 }
 
-.gender{
-    border-color: blue;
-    display: inline-flex;
-}
-
 .genLabel{
     padding:8px 14px;
     font-size: large;
@@ -119,9 +114,8 @@ a{
 }
 
 
-.genLabel:focus{
+.genLabel:hover{
     background-color: black;
-    border: red solid;
 }
 
 
@@ -132,11 +126,6 @@ a{
 .contribute p{
     display: flex;
     flex-direction: column;
-}
-
-.contirbute p p{
-    display: flex;
-    flex-direction: row;
 }
 
 .conLabel{
@@ -196,11 +185,71 @@ a{
     font-size: 25px;
 }
 
-
 .TED{
     background-color: rgb(60, 60, 60);
     padding: 10px;
     display: flex;
     font-size: 0.8em;
     justify-content: space-evenly;
+}
+
+@media(max-width:1360px){
+    #primaryNavBar{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    #primaryNavBar a:nth-of-type(1){
+        width: fit-content;
+        margin-right: auto;
+    }
+    #primaryNavBar img{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+}
+
+@media(max-width:1160px){
+    .mem{
+        flex-direction: column;
+        align-items: center;
+        font-size: 100% ;
+    }
+    .mem div:nth-of-type(1), .mem div:nth-of-type(2){
+        border-right: none;
+        border-bottom: red solid 1px;
+    }
+    .mem div{
+        width: 80%;
+    }
+    .form{
+        flex-direction:column;
+        align-self: center;
+    }
+    .form input{
+        width: 100%;
+    }
+    .TEDxfooter{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0 0 0 0;
+    }
+    .TEDxfooter div:nth-of-type(1){
+        width: 100 px;
+        margin: auto;
+        padding: 0 0 0 0;
+    }
+    .TEDxfooter img{
+        /* display: none; */
+        padding: 0 0 0 0;
+        width: 90px;
+        margin: 0 0 0 0;
+    }
+    .TED{
+        flex-direction: column;
+        /* align-self: center; */
+    }
 }
